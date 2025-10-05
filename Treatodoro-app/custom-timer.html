@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>pomodoro-custom</title>
+    <link rel="stylesheet" href="frame-style.css">
+
+    <script defer src="renderer.js"></script>
+    <script src="preload-assets.js" defer></script>
+    <script src="custom-timer.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="top-bar">
+        <span>Treatodoro</span>
+        <div id="window-controls">
+          <button id="min-btn" class="window-buttons">
+            <img src="Assets/min-btn.svg" alt="Min">
+          </button>
+          
+          <button id="close-btn" class="window-buttons">
+            <img src="Assets/close-btn.svg" alt="Close">
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <div id="cust-content">
+        <p class="cust-header">Set Custom Timer</p>
+        <div class="cust-container">
+          <button id="decrease-btn">
+            <img src="Assets/decrease-btn.svg" alt="Decrease">
+          </button>
+
+          <input type="text" id="timer-input" value="25 : 00">
+
+          <button id="increase-btn">
+            <img src="Assets/increase-btn.svg" alt="Increase">
+          </button>
+        </div>
+        <div>
+          <a href="timer.html">
+            <button id="play-btn">
+              <img id="play-icon" src="Assets/play-btn.svg" alt="Play">
+            </button>
+          </a>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>pomodoro-timer</title>
+    <link rel="stylesheet" href="frame-style.css">
+
+    <script defer src="renderer.js"></script>
+    <script src="preload-assets.js" defer></script>
+    <script src="image-seq.js" defer></script>
+    <script src="timer.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="top-bar">
+        <span>Treatodoro</span>
+        <div id="window-controls">
+          <button id="min-btn" class="window-buttons">
+            <img src="Assets/min-btn.svg" alt="Min">
+          </button>
+          
+          <button id="close-btn" class="window-buttons">
+            <img src="Assets/close-btn.svg" alt="Close">
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <div id="opacity-content">
+        <div id="sequence-container"></div>
+        <div id="timer-container">
+          <div id="timer">00:00</div>
+          <button id="play-pause-btn">
+            <img id="btn-icon" src="Assets/play-btn.svg" alt="Play">
+          </button>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>

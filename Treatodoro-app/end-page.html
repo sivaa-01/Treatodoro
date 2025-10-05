@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>pomodoro-endpage</title>
+    <link rel="stylesheet" href="frame-style.css">
+
+    <script defer src="renderer.js"></script>
+    <script src="preload-assets.js" defer></script>
+    <script src="image-seq.js" defer></script>
+    <script src="end-nav.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="top-bar">
+        <span>Treatodoro</span>
+        <div id="window-controls">
+          <button id="min-btn" class="window-buttons">
+            <img src="Assets/min-btn.svg" alt="Min">
+          </button>
+          
+          <button id="close-btn" class="window-buttons">
+            <img src="Assets/close-btn.svg" alt="Close">
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+        <div id="opc-content">
+          <button id="sound-btn">
+            <img id="sound-icon" src="Assets/unmute-btn.svg" alt="unmute">
+          </button>
+
+          <p id="end-text"></p>
+          <img id="end-img" src="" alt="Treat" width="192" height="192">
+          <div class="end-container">
+            <a href="timer.html">
+              <button id="snooze-btn">
+                <img src="Assets/snooze-btn.svg" alt="Snooze" />
+              </button>
+            </a>
+            <a href="start-page.html">
+              <button id="dismiss-btn">
+                <img src="Assets/dismiss-btn.svg" alt="Dismiss" />
+              </button>
+            </a>
+          </div>
+          <audio id="end-sound" src="Assets/mikrokosmos-ring.mp3" preload="auto" loop></audio>
+        </div>
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>pomodoro-menu</title>
+    <link rel="stylesheet" href="frame-style.css">
+
+    <script defer src="renderer.js"></script>
+    <script src="preload-assets.js" defer></script>
+    <script src="image-seq.js" defer></script>
+    <script src="menu-nav.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="top-bar">
+        <span>Treatodoro</span>
+        <div id="window-controls">
+          <button id="min-btn" class="window-buttons">
+            <img src="Assets/min-btn.svg" alt="Min">
+          </button>
+          
+          <button id="close-btn" class="window-buttons">
+            <img src="Assets/close-btn.svg" alt="Close">
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <div id="scnd-content">
+        <p class="menu-header">Pick your treat:</p>
+
+        <div class="menu">
+
+          <div class="row">
+            <div class="item">
+              <a href="timer.html?time=05:00">
+                <img src="Assets/imagesx96/coffee.png" alt="coffee">
+                </a>
+              <p>Coffee <br> [ 5 mins ]</p>
+            </div>
+
+            <div class="item">
+              <a href="timer.html?time=15:00">
+                <img src="Assets/imagesx96/ice-cream.png" alt="ice-cream">
+              </a>
+              <p>Ice Cream <br> [ 15 mins ]</p>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="item">
+              <a href="timer.html?time=25:00">
+                <img src="Assets/imagesx96/ramen-bowl.png" alt="ramen">
+              </a>
+              <p>Ramen Bowl <br> [ 25 mins ]</p>
+            </div>
+
+            <div class="item">
+              <a href="timer.html?time=50:00">
+                <img src="Assets/imagesx96/cake.png" alt="cake">
+              </a>
+              <p>Cake <br> [ 50 mins ]</p>
+            </div>
+
+            <div class="item">
+              <a href="custom-timer.html">
+                <img id="strawberry" src="Assets/imagesx96/strawberry.png" alt="strawberry">
+              </a>
+              <p>Strawberries <br> [ Custom ]</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
