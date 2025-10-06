@@ -133,7 +133,9 @@ If you want to run the app from source or build your own executable:
 <br>
 <p align="center">  · · ─ ·✦· ─ · ·</p>
 
-## License
+## License  
+This project is licensed under the [MIT License](LICENSE.md).  
+All assets are original and created by the author. 
 <br>
 <p align="center">  · · ─ ·✦· ─ · ·</p>
 
