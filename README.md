@@ -26,12 +26,7 @@ View full UI design (Figma, view-only):
 
 ## Installation or Setup
 
-### 1️⃣ For End Users
-Download and run the executable:  
-
-No additional setup required.
-
-### 2️⃣ For developers / contributors
+### For developers / contributors
 
 If you want to run the app from source or build your own executable:
 
