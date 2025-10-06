@@ -24,11 +24,11 @@ View full UI design (Figma, view-only):
 
 View Demo:  
 [Treatodoro Demo](Treatodoro-app/Assets/Treatodoro-Demo.mp4)
-> Note: The ringtone in the demo is not included in the repository. This project includes a placeholder audio file (silent-placeholder.mp3) instead.  
+> Note: The demo features a ringtone that is not included in the repository due to licensing restrictions. The project currently uses a silent placeholder (silent-placeholder.mp3). To use a proper alert, please replace the file at Treatodoro-app/Assets/silent-placeholder.mp3 with a sound file of your choosing. 
 <br>
 <p align="center">  · · ─ ·✦· ─ · ·</p>
 
-## Setup (Developers)
+## Setup
 
 If you want to run the app from source or build your own executable:
 
@@ -55,12 +55,18 @@ If you want to run the app from source or build your own executable:
    npm install
    ```
 
-4. Run the app in development mode:
+4. Customize the End-of-Session Ringtone:  
+   To enable the audio alert feature (which is toggled via the mute button), you must replace the placeholder.
+   * Replace the file at `Treatodoro-app/Assets/silent-placeholder.mp3` with your own MP3 file.
+   * The new file **must also be named `silent-placeholder.mp3`** to work correctly.
+     
+5. Run the app in development mode:
    ```bash
    npm start
    ```
-
-5. (Optional) Build distributable executable with **Electron Forge**:
+   > The app window will launch
+   
+6. (Optional) Build distributable executable with **Electron Forge**:
    * Install Electron Forge CLI if not already installed:
      ```bash
      npm install --save-dev @electron-forge/cli
@@ -82,7 +88,7 @@ If you want to run the app from source or build your own executable:
      This creates a folder like:  
      Treatodoro-app/out/make/...
 
-6. (Optional) Customize app icon:
+7. (Optional) Customize app icon:
    * Edit forge.config.js:
      ```js
      packagerConfig: {
