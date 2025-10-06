@@ -24,12 +24,11 @@ View full UI design (Figma, view-only):
 
 View Demo:  
 [Treatodoro Demo](Treatodoro-app/Assets/Treatodoro-Demo.mp4)
+> Note: The ringtone in the demo is not included in the repository. This project includes a placeholder audio file (silent-placeholder.mp3) instead.  
 <br>
 <p align="center">  · · ─ ·✦· ─ · ·</p>
 
-## Installation or Setup
-
-### For developers / contributors
+## Setup (Developers)
 
 If you want to run the app from source or build your own executable:
 
