@@ -20,7 +20,11 @@ Stay productive while keeping things sweet and simple ✨
 
 ## Preview
 View full UI design (Figma, view-only):  
-[Treatodoro UI](https://www.figma.com/design/FkaJGoQn8puV4jJeuLBOku/TREATODORO?node-id=0-1&t=DSQiMKWj9PRJZXAV-1)
+[Treatodoro UI](https://www.figma.com/design/FkaJGoQn8puV4jJeuLBOku/TREATODORO?node-id=0-1&t=DSQiMKWj9PRJZXAV-1)  
+
+<video width="600" controls>
+  <source src="Treatodoro-app/Assets/Treatodoro-Demo.mp4" type="video/mp4">
+</video>
 <br>
 <p align="center">  · · ─ ·✦· ─ · ·</p>
 
