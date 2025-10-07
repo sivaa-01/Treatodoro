@@ -1,7 +1,7 @@
 const timerInput = document.getElementById('timer-input');
 const increaseBtn = document.getElementById('increase-btn');
 const decreaseBtn = document.getElementById('decrease-btn');
-const playBtnLink = document.querySelector('#play-btn').parentElement; // <a> around play button
+const playBtnLink = document.querySelector('#play-btn').parentElement;
 
 // Parse current input into minutes and seconds
 function getTime() {
@@ -23,7 +23,6 @@ timerInput.addEventListener('input', () => {
   // allow only numbers and colon
   let cleaned = timerInput.value.replace(/[^0-9:]/g, '');
 
-  // split into mm:ss
   let [m, s] = cleaned.split(':');
 
   let minutes = parseInt(m) || 0;
@@ -57,10 +56,11 @@ playBtnLink.addEventListener('click', (e) => {
   // Set sequence for custom timer (strawberry)
   localStorage.setItem("chosenSequence", "strawberry-sequence");
 
-  // Navigate to timer.html (link already points to timer.html)
+  // Navigate to timer.html
   playBtnLink.href = `timer.html`;
 });
 
 // Initialize properly formatted input
 updateInput(25, 0);
+
 
