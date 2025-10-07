@@ -10,7 +10,7 @@ if (chosenSequence) {
 }
 //----------------------------------------------
 
-// Get pomodoro time: prefer localStorage, then URL param, then default
+// Get time: localStorage, URL param, default
 let timeStr = localStorage.getItem("pomodoroTime") 
            || urlParams.get("time") 
            || "25:00";
@@ -82,5 +82,6 @@ playPauseBtn.addEventListener("mouseleave", () => {
 // ---------------- INIT ----------------
 updateDisplay();
 startTimer(); // auto-start
+
 
 
