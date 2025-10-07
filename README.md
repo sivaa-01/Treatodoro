@@ -40,33 +40,32 @@ If you want to run the app from source or build your own executable:
    node -v
    npm -v
    ```
+   If you encounter any build issues, refer to:  
+   [https://github.com/nodejs/node-gyp#on-windows](https://github.com/nodejs/node-gyp#on-windows)
    
-2. Clone the repository:
+3. Clone the repository:
    ```bash
    git clone https://github.com/sivaa-01/treatodoro.git
    cd treatodoro
    ```
-
-   If you encounter any build issues, refer to:  
-   [https://github.com/nodejs/node-gyp#on-windows](https://github.com/nodejs/node-gyp#on-windows)
    
-3. Install Project Dependencies:
+4. Install Project Dependencies:
    ```bash
    npm install
    ```
 
-4. Customize the End-of-Session Ringtone:  
+5. Customize the End-of-Session Ringtone:  
    To enable the audio alert feature (which is toggled via the mute button), you must replace the placeholder.
    * Replace the file at `Treatodoro-app/Assets/silent-placeholder.mp3` with your own MP3 file.
    * The new file **must also be named `silent-placeholder.mp3`** to work correctly.
      
-5. Run the app in development mode:
+6. Run the app in development mode:
    ```bash
    npm start
    ```
    > The app window will launch
    
-6. (Optional) Build distributable executable with **Electron Forge**:
+7. (Optional) Build distributable executable with **Electron Forge**:
    * Install Electron Forge CLI if not already installed:
      ```bash
      npm install --save-dev @electron-forge/cli
@@ -88,7 +87,7 @@ If you want to run the app from source or build your own executable:
      This creates a folder like:  
      Treatodoro-app/out/make/...
 
-7. (Optional) Customize app icon:
+8. (Optional) Customize app icon:
    * Edit forge.config.js:
      ```js
      packagerConfig: {
