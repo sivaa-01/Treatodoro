@@ -1,11 +1,8 @@
 const endImg = document.getElementById("end-img");
 const endText = document.getElementById("end-text");
-
-
-// Get chosen sequence
 const chosenSequence = localStorage.getItem("chosenSequence");
 
-// Map sequence class to static image and text
+// Map sequence class to image and text
 const endMap = {
   "coffee-sequence": {
     img: "Assets/imagesx192/coffee.png",
@@ -29,7 +26,6 @@ const endMap = {
   }
 };
 
-// Set image and text
 if (chosenSequence && endMap[chosenSequence]) {
   endImg.src = endMap[chosenSequence].img;
   endText.textContent = endMap[chosenSequence].text;
@@ -47,3 +43,4 @@ soundBtn.addEventListener("click", () => {
   endSound.muted = !endSound.muted;
   soundIcon.src = endSound.muted ? "Assets/mute-btn.svg" : "Assets/unmute-btn.svg";
 });
+
