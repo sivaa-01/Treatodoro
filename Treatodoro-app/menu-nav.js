@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Select the <img> elements inside .item (they have the alt text we use as key)
   const menuItems = document.querySelectorAll(".item img");
 
   menuItems.forEach(img => {
@@ -9,19 +8,20 @@ document.addEventListener("DOMContentLoaded", () => {
       const mapping = imageMap[key]; // comes from image-seq.js
 
       if (mapping) {
-        // Store sequence class so timer/end pages can use it
+        // Store sequence class
         localStorage.setItem("chosenSequence", mapping.sequenceClass);
 
-        // If this item has a default pomodoro time, store it
+        // If this item has a preset time, store it
         if (mapping.time) {
           localStorage.setItem("pomodoroTime", mapping.time);
         } else {
-          // In case of custom timer (strawberry), clear time so custom-timer can set it
+          // In case of custom timer (strawberry), clear time
           localStorage.removeItem("pomodoroTime");
         }
       }
-      // Navigation still happens via <a href=...> naturally
+      
     });
   });
 });
+
 
