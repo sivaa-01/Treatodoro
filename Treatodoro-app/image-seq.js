@@ -22,6 +22,7 @@ const imageMap = {
   strawberry: {
     sequenceClass: "strawberry-sequence",
     end: "Assets/imagesx192/strawberry.png"
-    // time comes from custom input
+    //custom input
   }
 };
+
